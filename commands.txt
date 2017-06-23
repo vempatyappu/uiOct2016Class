@@ -20,5 +20,14 @@ adding files to repository:
 1. git add <filename or just use "." to represent all >
 2. git status : to chk status of local repository
 3. git commit -m "comment for the changes"
-4. git pull origin <branch name>
-5. git push origin <branch name>
+4. git pull origin <branch name> : pull updated server
+5. git push origin <branch name> : push your updated files to server
+
+how to get files from main repository to forked repository:
+1. git remote -v : pull how many links are there
+2. git remote add <alias name> <url of main repository> : make main repositry accessable
+3. git fetch <main repository> -v : fetch everything from main repository
+4. git fetch <fork repository> -v : fetch everything from fork repository
+5. git merge <main repository>/<fork repository> : merge files from main repository to fork repository
+6. git pull origin master
+7. git push origin master
