@@ -1,0 +1,24 @@
+GIT commands:
+mkdir : create a new directory
+chmod -R 777 <directory name> : gives read/write permissions to <directory name>
+cd <directory name> : change directory to <directory name>
+git clone <repository/fork url> : clones the fork/repository to local system, one time command
+ls : shows child directories, doesnt show hidden folders
+git status : current status of your local repository, continoulsy used to chk status of local
+cd .. : takes you out of current directory
+
+In case we accidentally delete our .git folder on local machine losing connection to origin:
+git init : will initialize an empty git repository in the directory
+git remote add origin <repository/fork url> : will restore connection to origin in case .git folder is deleted
+git add <file name> : add new file to local git to be synced to origin
+git commit -m "message" : put the new file on cache and -m for message
+git pull <alias name> <name of the branch from which youre pulling> --allow-unrelated-histories : pull files 
+from origin to alias, press shift+z+z to get out of comment
+git push <alias name> <name of the branch from which youre pulling> : push files from local to origin 
+
+adding files to repository:
+1. git add <filename or just use "." to represent all >
+2. git status : to chk status of local repository
+3. git commit -m "comment for the changes"
+4. git pull origin <branch name>
+5. git push origin <branch name>
