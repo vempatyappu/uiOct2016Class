@@ -1,1 +1,78 @@
 www.google.com : domain, an alias of IP address
+HTML - Hyper Text Markup Language : is used by browser to determine how and what to render the data downloaded from server/tunnel
+
+*the browser will not render a page until all the files are downloaded, which takes millisecs
+< : delimiter
+<"..."> : "..." is called an element
+
+the browser always looks for index.html file in the downloaded files, and its rendered line by line by the browser
+
+Structure of a html:
+all html shld have the first line mentioning the tyoe of html its using for the page
+<!doctype html> for html 5
+
+Then its followed by <html> element and closed with </html>.
+Every <html> element has a <head> and a <body> elements.
+
+*Always use indentation to make your code readable and clean.
+*All elements shld be closed <...> </...> else the browser will try to keep rendering it and eventually crash.
+
+Advantages of HTML5:
+1. it introduced new elements like <video>, <audio>, <section> etc.
+2. it introduced the concept of semantic html 
+3. it introduced the concept of media
+4. it introduced the concept of storages
+*google for more features of HTML5
+
+Q. Why do we have to use HTML5 instead of HTML4?
+Ans: As HTML4 requires accessing a syntax file on w3.org to check for syntax everytime a page is rendered making it slower than HTML5
+
+*garbage rendering is called "quirks mode" in browsers language.
+
+browsers interpret elements two ways:
+1. block level element : has dimensions, can also forcefully set dimensions
+ex : 
+	1. body
+	2. div: short for divisons
+	3. section, article, header, footer etc.
+2. inline level element : doesnt have dimensions/adopts dimensions from child elements
+ex:
+	1. span
+	2. ank
+	3. image blocks
+
+*in HTML5 a new concept was introduced called "trinity" (this is slang and wont be found on the web)
+Trinity means every page must contain three elements: header, body and footer
+Every element shld be a child of <article> inside which you shld have <header> <section> (used instead of body) and <footer>
+In the body this is always the hierarchy and the below trinity shld always be used and can be nested as many times
+<article>
+	<header></header>
+	<section>
+		<article>
+			<header></header>
+			<section></section>
+			<footer></footer>
+		</article>
+	</section>
+	<footer></footer>
+</article>
+
+*in HTML every element can be repeated other than head and body
+*entire website shld be in the trinity format
+
+element <nav> : the navigation bar, in most cases its in the <header>
+a <nav> can have a heading
+
+element <h1>, <h2> ..: heading element and the number beside h denotes the size of the heading with h1 being the biggest size
+heading can be in <nav> or <header>.
+
+*in html there are two ways of having lists
+1. unordered list
+2. ordered list
+
+element <ul> : unordered list
+element <ol> : ordered list
+element <li> : list item
+the elements <ul> and <ol> can have only one child element and that is <li>.
+
+
