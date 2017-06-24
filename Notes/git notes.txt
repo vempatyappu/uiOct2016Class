@@ -24,10 +24,10 @@ adding files to repository:
 5. git push origin <branch name> : push your updated files to server
 
 how to get files from main repository to forked repository:
-1. git remote -v : pull how many links are there
-2. git remote add <alias name> <url of main repository> : make main repositry accessable
+1. git remote -v : will show what your local git is connected to
+2. git remote add <alias name> <url of main repository> : connect main repository and give it an alias
 3. git fetch <main repository> -v : fetch everything from main repository
 4. git fetch <fork repository> -v : fetch everything from fork repository
-5. git merge <main repository>/<fork repository> : merge files from main repository to fork repository
+5. git merge <main repository>/<branch name> : merge files from main repository's branch to fork repository's branch
 6. git pull origin master
 7. git push origin master
