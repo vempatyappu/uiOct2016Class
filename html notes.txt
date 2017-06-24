@@ -1,0 +1,1 @@
+www.google.com : domain, an alias of IP address
