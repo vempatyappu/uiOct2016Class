@@ -2,49 +2,86 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <!--Tab name-->
         <title>Testing out forms</title>
     </head>
 
     <body>
         <article>
+            <!--Page Heading-->
             <header>
-                <h1>Welcome to the dark side.</h1>
+                <h1>Applicant's Information.</h1>
             </header>
         <section>
+
+            <!--License Form start-->
             <form name="newLicenseForm">
+
+                <!--First Name-->
                 <div>
                     <label for="firstName">Applicant's First Name:</label>
                     <input type="text" id="firstName" name="firstName" placeholder="First name"/>
                 </div>
                 <br/>
 
+                <!--Last Name-->
                 <div>
                     <label for="lastName">Applicant's Last Name:</label>
                     <input type="text" id="lastName" name="lastName" placeholder="Last name"/>
                 </div>
                 <br/>
 
+                <!--Phone Number-->
                 <div>
                     <label for="phone">Applicant's Phone Number:</label>
                     <input type="text" id="phone" name="phone" placeholder="Phone Number"/>
                 </div>
                 <br/>
 
+                <!--Gender-->
                 <div>
                     <label for="gender">Applicant's Gender:</label>
                     <div id="gender">
+                        <!--Male-->
                         <label for="male">Male</label>
-                        <input type="radio" id="male" name="gender"/>
+                        <input type="radio" id="male" name="gender" value="male" checked/>
 
+                        <!--Female-->
                         <label for="female">Female</label>
-                        <input type="radio" id="female" name="gender"/>
+                        <input type="radio" id="female" name="gender" value="female" />
+
+                        <!--Other-->
+                        <label for="other">Other</label>
+                        <input type="radio" id="other" name="gender" value="other" />
                     </div>
+                </div>
+                <br/>
+
+                <!--Senior Citizen checkbox-->
+                <div>
+                    <label for="seniorCitizen">Check if Senior Citizen:</label>
+                    <input type="checkbox" id="seniorCitizen" name="seniorCitizen" />
+                </div>
+                <br/>
+
+                <!--Submit and reset buttons-->
+                <div>
+                    <!--Submit-->
+                    <button type="submit" id="submit" >
+                        <span>Submit</span>
+                    </button>
+                    <!--Reset-->
+                    <input type="reset" id="reset" value="Reset all fields"/>
                 </div>
                 <br/>
 
             </form>
         </section>
-        <footer></footer>
+
+        <!--Page Footer-->
+        <footer>
+            <p>This here will be footer.</p>
+        </footer>
         </article>
     </body>
 </html>
