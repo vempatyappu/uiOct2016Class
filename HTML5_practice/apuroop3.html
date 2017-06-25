@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+    <!--Page Head-->
+    <head>
+
+        <!--Title of page displayed on tab-->
+        <title>
+            XYZ Inc. EIP 2017
+        </title>
+
+        <!--Styles used-->
+        <style></style>
+
+        <!--CSS-->
+        <script></script>
+
+        <!--no current links-->
+        <link/>
+
+        <!--Not a live website-->
+        <base/>
+
+        <!--Meta data-->
+        <meta name="description" content="All new employees of XYZ Inc. must be registered according to IFC-2391"/>
+        <meta name="keywords" content="XYZ, New, Employee, IFC-2391"/>
+        <meta charset="UTF-8"/>
+    </head>
+
+    <!--Body of the page-->
+    <body>
+        <article>
+
+            <!--Heading of the page-->
+            <header>
+                <h1>New Employee Portal 2017</h1>
+            </header>
+
+            <!--Section with form-->
+            <section>
+
+                <!--Form for employee info-->
+                <form name="employeeForm">
+
+                    <!--Creating divisions to separate input fields-->
+                    <!--First Name-->
+                    <div>
+                        <label for="firstName" >Employee's First Name:</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="First Name"/>
+                    </div>
+                    <br>
+
+                    <!--Last Name-->
+                    <div>
+                        <label for="lastName" >Employee's Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Last Name"/>
+                    </div>
+                    <br>
+
+                    <!--Phone number-->
+                    <div>
+                        <label for="phone" >Employee's Phone Number:</label>
+                        <input type="text" id="phone" name="phone" placeholder="Enter Phone Number"/>
+                    </div>
+                    <br>
+
+                    <!--Gender selection-->
+                    <div>
+                        <label for="gender">Employee's Gender:</label>
+                        <div id="gender">
+
+                            <!--Male-->
+                            <label for="male" >Male:</label>
+                            <input type="radio" id="male" name="gender"/>
+
+                            <!--Female-->
+                            <label for="female" >Female:</label>
+                            <input type="radio" id="female" name="gender"/>
+
+                            <!--Other-->
+                            <label for="other" >Other:</label>
+                            <input type="radio" id="other" name="gender"/>
+                        </div>
+                    </div>
+                    <br>
+
+                    <!--Employment Status-->
+                    <div>
+                        <label for="fullTime" >Full Time Employee:</label>
+                        <input type="checkbox" id="fullTime" name="fullTime" />
+
+                        <label for="overTime" >Overtime:</label>
+                        <input type="checkbox" id="overTime" name="overTime" />
+                    </div>
+                    <br>
+
+                    <!--Employee email-->
+                    <div>
+                        <label for="email">Employee's email:</label>
+                        <input type="email" id="email" name="email" placeholder="john_doe@example.com"/>
+                    </div>
+                    <br>
+
+                    <!--Password creation-->
+                    <div>
+                        <div>
+                            <!--New password-->
+                            <label for="pwd">New Password:</label>
+                            <input type="password" id="pwd" name="password" />
+                        </div>
+                        <br>
+
+                        <div>
+                            <!--Confirm Password-->
+                            <label for="confPwd">Confirm Password:</label>
+                            <input type="password" id="confPwd" name="confPassword" />
+                        </div>
+                    </div>
+                    <br><br>
+
+                    <!--Submit and Reset buttons-->
+                    <div>
+                        <!--Submit button-->
+                        <button type="submit" id="submit">
+                            <span>Submit</span>
+                        </button>
+                        <!--Reset Button-->
+                        <button type="reset" id="reset">
+                            <span>Reset all fields</span>
+                        </button>
+                    </div>
+                    <br>
+
+                </form>
+            </section>
+
+            <!--Footer of the page-->
+            <footer>
+                <p>All rights inclusive of XYZ Inc..</p>
+            </footer>
+        </article>
+    </body>
+</html>
