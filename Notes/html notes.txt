@@ -45,6 +45,7 @@ ex:
 Trinity means every page must contain three elements: header, body and footer
 Every element shld be a child of <article> inside which you shld have <header> <section> (used instead of body) and <footer>
 In the body this is always the hierarchy and the below trinity shld always be used and can be nested as many times
+
 <article>
 	<header></header>
 	<section>
@@ -56,12 +57,13 @@ In the body this is always the hierarchy and the below trinity shld always be us
 	</section>
 	<footer></footer>
 </article>
+the reason trinity is used even if header and footer can be empty is to keep your code clean.
 
 *in HTML every element can be repeated other than head and body
 *entire website shld be in the trinity format
 
 element <nav> : the navigation bar, in most cases its in the <header>
-a <nav> can have a heading
+a <nav> can have a heading, usually <nav> is in header/footer
 
 element <h1>, <h2> ..: heading element and the number beside h denotes the size of the heading with h1 being the biggest size
 heading can be in <nav> or <header>.
@@ -70,9 +72,30 @@ heading can be in <nav> or <header>.
 1. unordered list
 2. ordered list
 
-element <ul> : unordered list
-element <ol> : ordered list
+element <ul> : unordered list, bullets
+element <ol> : ordered list, ordered with numbers
 element <li> : list item
 the elements <ul> and <ol> can have only one child element and that is <li>.
 
+Q. What is semantic html?
+Ans: Semantic HTML was introduced in HTML5. It's a way of making us developers understand what an elements function is.
+Its a structured way of writing a html code thats understandable by a different developer.
 
+attribute: an attribute in html basically describes its characteristics
+there are several attributes available for each element but few are standard for all elements:
+1. id: describes uniqueness of an element
+2. class: shares common values b/w elements
+
+*for commenting <!-- --> shld be used, commonly used for helpful tips to others working on the same file
+The message is usually left before an element. To make a comment important use TODO: after <!-- like <!-- TODO: -->
+
+two main components with which html gets rendered by the browser:
+1. tag: a tag has closing tag name. ex: <head></head>
+2. element: elements are fields which accept some sort of inputs. they dont have closing fields
+ex: <input />
+every element has a mandatory attribute to be added.
+
+all attribute values shld not have spaces
+newLicenseForm - this type of casing is called camel casing in programming language, first letter of each word is capitalized
+
+*every input field must have an id attribute and a name attribute
