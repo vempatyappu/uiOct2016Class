@@ -4,7 +4,7 @@
 
 3. Also, read an article on html responsive and add the correct meta data for html only, nothing else from w3schools.com
 4. Follow the trinity structure and create a form called employeeForm. this form should have:
-    i. text field
+    i. name field
     ii. phone field
     iii. checkbox
     iv. working radio button

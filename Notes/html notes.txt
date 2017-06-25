@@ -131,13 +131,21 @@ needs two attributes always:
 	b. href: source address, url or local
 also used to link fevicons to the page
 2. <base/>: defines the base url for our website. once a webpage and all its related files are 
-ready and loaded onto the server the base directs the browser to the server's ip address. 
+ready and loaded onto the server the base directs the browser to the server's ip address and 
+its domain (index.html).base is completely optional and depends upon your server settings/configuration
 has href attribute defining the servers url
-3. <meta/>: 
+3. <meta/>: this is used to describe more meta information which are not covered by the above five tags.
+using this we can describe or have a few keywords for the website using meta.
+every meta has name="" attribute
 
 fevicons: the little icons displayed on the tab of a webpage
 
 Q. for a HTML code why is the <head> before the <body>?
 Ans: bcos there are certain meta data like link which grabs an external file that needs to be
 executed before the webpage renders
+
+element <iframe>: used to render another html/webpage into current webpage. used to show static data as
+theyre risky and may confuse javaScript.
+
+read about html videos and audios on w3schools*
 
