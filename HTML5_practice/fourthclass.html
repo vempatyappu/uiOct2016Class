@@ -1,0 +1,114 @@
+<!--TODO: start commenting -->
+<!doctype html>
+<html lang="en">
+
+    <!--Head part is the tab and has meta data about the page-->
+    <head>
+        <!--Title/name displayed on tab-->
+        <title>New License Form</title>
+
+        <!--style is used to write css styles on html files itself-->
+        <style>
+            body{
+                background-color: cyan;
+                }
+        </style>
+
+        <!--script is used to write JS on the html itself-->
+        <script>
+
+        </script>
+
+        <!--link is used to link an external source: mostly image or css files-->
+        <link />
+
+        <meta name="description" content="This is the form to apply for license." />
+        <meta name="keywords" content="license, new, form, applicant" />
+    </head>
+
+    <!--Body is the part that's rendered and seen on the page-->
+    <body>
+        <!--trinity structure-->
+        <article>
+
+            <!--Page Heading-->
+            <header>
+                <h1>Applicant's Information.</h1>
+            </header>
+
+            <section>
+                <!--License Form start-->
+                <form name="newLicenseForm">
+
+                    <!--First Name-->
+                    <div>
+                        <label for="firstName">Applicant's First Name:</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="First name"/>
+                    </div>
+                    <br/>
+
+                    <!--Last Name-->
+                    <div>
+                        <label for="lastName">Applicant's Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Last name"/>
+                    </div>
+                    <br/>
+
+                    <!--Phone Number-->
+                    <div>
+                        <label for="phone">Applicant's Phone Number:</label>
+                        <input type="text" id="phone" name="phone" placeholder="Phone Number"/>
+                    </div>
+                    <br/>
+
+                    <!--Gender-->
+                    <div>
+                        <label for="gender">Applicant's Gender:</label>
+                        <div id="gender">
+                        <!--Male-->
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender" value="male" checked/>
+
+                        <!--Female-->
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender" value="female" />
+
+                        <!--Other-->
+                        <label for="other">Other</label>
+                        <input type="radio" id="other" name="gender" value="other" />
+                        </div>
+                    </div>
+                    <br/>
+
+                    <!--Senior Citizen checkbox-->
+                    <div>
+                        <label for="seniorCitizen">Check if Senior Citizen:</label>
+                        <input type="checkbox" id="seniorCitizen" name="seniorCitizen" />
+                    </div>
+                    <br/>
+
+                    <!--Submit and reset buttons-->
+                    <div>
+                        <!--Submit-->
+                        <button type="submit" id="submit" >
+                            <span>Submit</span>
+                        </button>
+                        <!--Reset-->
+                        <input type="reset" id="reset" value="Reset all fields"/>
+                    </div>
+                    <br/>
+
+                    <aside>
+                        <iframe src="apuroop2.html" ></iframe>
+                    </aside>
+
+                </form>
+            </section>
+
+            <!--Page Footer-->
+            <footer>
+                <p>This here will be footer.</p>
+            </footer>
+        </article>
+    </body>
+</html>

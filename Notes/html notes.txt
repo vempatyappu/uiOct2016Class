@@ -1,11 +1,13 @@
 www.google.com : domain, an alias of IP address
-HTML - Hyper Text Markup Language : is used by browser to determine how and what to render the data downloaded from server/tunnel
+HTML - Hyper Text Markup Language : is used by browser to determine how and what to render the data 
+downloaded from server/tunnel
 
 *the browser will not render a page until all the files are downloaded, which takes millisecs
 < : delimiter
 <"..."> : "..." is called an element
 
-the browser always looks for index.html file in the downloaded files, and its rendered line by line by the browser
+the browser always looks for index.html file in the downloaded files, and its rendered line by line 
+by the browser
 
 Structure of a html:
 all html shld have the first line mentioning the tyoe of html its using for the page
@@ -15,7 +17,8 @@ Then its followed by <html> element and closed with </html>.
 Every <html> element has a <head> and a <body> elements.
 
 *Always use indentation to make your code readable and clean.
-*All elements shld be closed <...> </...> else the browser will try to keep rendering it and eventually crash.
+*All elements shld be closed <...> </...> else the browser will try to keep rendering it and 
+eventually crash.
 
 Advantages of HTML5:
 1. it introduced new elements like <video>, <audio>, <section> etc.
@@ -25,7 +28,8 @@ Advantages of HTML5:
 *google for more features of HTML5
 
 Q. Why do we have to use HTML5 instead of HTML4?
-Ans: As HTML4 requires accessing a syntax file on w3.org to check for syntax everytime a page is rendered making it slower than HTML5
+Ans: As HTML4 requires accessing a syntax file on w3.org to check for syntax everytime a page is 
+rendered making it slower than HTML5
 
 *garbage rendering is called "quirks mode" in browsers language.
 
@@ -43,8 +47,10 @@ ex:
 
 *in HTML5 a new concept was introduced called "trinity" (this is slang and wont be found on the web)
 Trinity means every page must contain three elements: header, body and footer
-Every element shld be a child of <article> inside which you shld have <header> <section> (used instead of body) and <footer>
-In the body this is always the hierarchy and the below trinity shld always be used and can be nested as many times
+Every element shld be a child of <article> inside which you shld have <header> <section> 
+(used instead of body) and <footer>
+In the body this is always the hierarchy and the below trinity shld always be used and can be 
+nested as many times
 
 <article>
 	<header></header>
@@ -65,7 +71,8 @@ the reason trinity is used even if header and footer can be empty is to keep you
 element <nav> : the navigation bar, in most cases its in the <header>
 a <nav> can have a heading, usually <nav> is in header/footer
 
-element <h1>, <h2> ..: heading element and the number beside h denotes the size of the heading with h1 being the biggest size
+element <h1>, <h2> ..: heading element and the number beside h denotes the size of the heading 
+with h1 being the biggest size
 heading can be in <nav> or <header>.
 
 *in html there are two ways of having lists
@@ -78,7 +85,8 @@ element <li> : list item
 the elements <ul> and <ol> can have only one child element and that is <li>.
 
 Q. What is semantic html?
-Ans: Semantic HTML was introduced in HTML5. It's a way of making us developers understand what an elements function is.
+Ans: Semantic HTML was introduced in HTML5. It's a way of making us developers understand what 
+an elements function is.
 Its a structured way of writing a html code thats understandable by a different developer.
 
 attribute: an attribute in html basically describes its characteristics
@@ -86,8 +94,10 @@ there are several attributes available for each element but few are standard for
 1. id: describes uniqueness of an element
 2. class: shares common values b/w elements
 
-*for commenting <!-- --> shld be used, commonly used for helpful tips to others working on the same file
-The message is usually left before an element. To make a comment important use TODO: after <!-- like <!-- TODO: -->
+*for commenting <!-- --> shld be used, commonly used for helpful tips to others working on the 
+same file
+The message is usually left before an element. To make a comment important use 
+TODO: after <!-- like <!-- TODO: -->
 
 two main components with which html gets rendered by the browser:
 1. tag: a tag has closing tag name. ex: <head></head>
@@ -96,6 +106,38 @@ ex: <input />
 every element has a mandatory attribute to be added.
 
 all attribute values shld not have spaces
-newLicenseForm - this type of casing is called camel casing in programming language, first letter of each word is capitalized
+newLicenseForm - this type of casing is called camel casing in programming language, first 
+letter of each word is capitalized
 
 *every input field must have an id attribute and a name attribute
+*a form shld have atleast an input and a button, and input is absolutely necessary
+
+element <span>: used to show small one line statements
+
+element <head>: is needed as it holds all the meta data, meta data is nothing but information 
+about data and everything in head is not visible on the page.
+the info in the head is used by search engines to find the keywords or info about the webpage
+
+*a thumb rule is that whatever tags and elements allowed in body are not allowed in head and viceversa
+
+the tags allowed in <head> are:
+1. <title>: Set the title of the page to be displayed on the tab of the webpage
+2. <style>: used to set css style on html file itself
+3. <script>: used to write javaScript on the html file itself
+and the elements:
+1. <link/>: link is used to link an external source - like external image or css files, 
+needs two attributes always:
+	a. rel: to specify relation b/w your file and external source
+	b. href: source address, url or local
+also used to link fevicons to the page
+2. <base/>: defines the base url for our website. once a webpage and all its related files are 
+ready and loaded onto the server the base directs the browser to the server's ip address. 
+has href attribute defining the servers url
+3. <meta/>: 
+
+fevicons: the little icons displayed on the tab of a webpage
+
+Q. for a HTML code why is the <head> before the <body>?
+Ans: bcos there are certain meta data like link which grabs an external file that needs to be
+executed before the webpage renders
+
