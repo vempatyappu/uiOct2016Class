@@ -10,7 +10,7 @@ the browser always looks for index.html file in the downloaded files, and its re
 by the browser
 
 Structure of a html:
-all html shld have the first line mentioning the tyoe of html its using for the page
+all html shld have the first line mentioning the type of html its using for the page
 <!doctype html> for html 5
 
 Then its followed by <html> element and closed with </html>.
