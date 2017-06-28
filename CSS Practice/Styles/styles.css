@@ -3,4 +3,11 @@ input{
 }
 
 form{
-    border-style:}
+    border:2px solid #0a35d3;
+}
+
+
+
+input{
+    display:block;
+}

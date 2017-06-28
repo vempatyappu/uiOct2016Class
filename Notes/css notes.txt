@@ -1,0 +1,31 @@
+CSS: Cascading Style Sheet
+
+syntax is:
+
+<name of the element> {
+	<styles>:<value>;	
+}
+
+*not having a closing tag for style would break the page
+
+Q. How many ways can css/styles be integrated into a html?
+Ans: there are three ways you can write a css:
+1. attribute/inline - most preferred way 
+ex: <body style="<style>:<value>;<style>:<value>;"> </body>
+
+2. internal - less preferred way
+ex: 
+<style>
+	<name of the element> {
+		<style>:<value>;
+	}
+</style>
+
+3. external - least preferred way
+ex: <link href="styles.css" rel="stylesheet"/>
+the syntax for internal and external styels is same
+
+browsers understand only RGB (Red Green and Blue) colors
+0to255.com to create a color
+all colors can be represented by a hexadecimal number #******
+
