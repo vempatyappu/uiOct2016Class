@@ -29,3 +29,37 @@ browsers understand only RGB (Red Green and Blue) colors
 0to255.com to create a color
 all colors can be represented by a hexadecimal number #******
 
+styles: 
+border:<width> <type> <color>;, order of the properties wont
+matter but used/standard convention is as above
+
+or use individually 
+border-style
+border-color
+border-image
+border-width etc.
+
+display: change display nature of the element/tag
+an element can be displayed:
+1. inline
+2. block
+3. inline-block
+4. table
+5. flex - not used often
+6. none - do not display the element at all
+a block level element can have inline elements but not the
+other way around which will cause the stylesheet to break.
+
+in css the comment is /* */, and important comments can be 
+represented by "TODO:".
+
+we can capture an id by using # as a prefix, ex:
+<button type="reset" id="reset"></button>
+#reset {}
+
+we can also capture using type or name:
+button [type="reset"] {}
+button [name="reset"] {}
+
+every element in html has a background. the styles to background
+are similar to border

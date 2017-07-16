@@ -4,10 +4,9 @@ input{
 
 form{
     border:2px solid #0a35d3;
+    display:inline-block;
 }
 
-
-
-input{
+input[type="text"]{
     display:block;
 }
